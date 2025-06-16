@@ -23,6 +23,7 @@ LeetMetric is a clean and interactive web application that displays your **LeetC
 - JavaScript (Vanilla JS)
 
 - ## 🧑‍💻 How to Use Locally
+- ****Request temporary access on https://cors-anywhere.herokuapp.com/corsdemo****
 - 1. **Clone the repository:**
 
    ```bash
