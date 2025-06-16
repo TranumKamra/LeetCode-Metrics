@@ -109,6 +109,37 @@ function displayUserData(parsedData){
             updateProgress(solvedHardQues,totalHardQues,hardLabel,hardProgressCircle);
 
 
+
+            const cardData=[
+                {
+                    label: "Overall Submissions", value:parsedData.data.matchedUser.submitStats.totalSubmissionNum[0].submissions
+                },
+                 {
+                    label: "Overall Easy Submissions", value:parsedData.data.matchedUser.submitStats.totalSubmissionNum[1].submissions
+                },
+                 {
+                    label: "Overall Medium Submissions", value:parsedData.data.matchedUser.submitStats.totalSubmissionNum[2].submissions
+                },
+                 {
+                    label: "Overall Hard Submissions", value:parsedData.data.matchedUser.submitStats.totalSubmissionNum[3].submissions
+                },
+
+            ];
+
+            console.log(cardData);
+
+            cardStatsContainer.innerHTML=cardData.map(
+                data=>
+                    
+                    `<div class="card">
+                    <h4>${data.label}</h4>
+                    <p>${data.value}</p>
+                    </div>`
+                   
+                
+            ).join("")
+
+
 }
 
 
